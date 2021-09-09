@@ -1,4 +1,4 @@
-import { getData, writeData, updatePost } from "../data.js";
+import { getData, writeData, updateUser } from "../data.js";
 
 export function usersGet(req, res) {
   const data = getData();
@@ -22,9 +22,9 @@ export function usersPost(req, res) {
 export function usersPut(req, res) {
   const id = parseInt(req.params.id);
 
-  updatePost(id, req.body);
+  updateUser(id, req.body);
 
-  res.json(req.body);
+  res.json(JSON.stringify(req.body) + req.body.id + " updated");
 }
 
 // Fat Controller, Skinny Model

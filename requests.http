@@ -6,7 +6,7 @@ DELETE http://localhost:3012/posts/7168588332574
 
 ### 
 
-PUT http://localhost:3012/posts/6938841965853
+PUT http://localhost:3012/posts/6965499825282
 Content-Type: application/json
 
 {
@@ -40,11 +40,11 @@ Content-Type: application/json
 
 ### 
 
-DELETE http://localhost:3012/users/8919252309385
+DELETE http://localhost:3012/users/9189290997193
 
 ###
 
-PUT http://localhost:3012/users/1907535095431
+PUT http://localhost:3012/users/9189290997193
 Content-Type: application/json
 
 {

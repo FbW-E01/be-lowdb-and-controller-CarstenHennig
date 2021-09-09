@@ -21,7 +21,22 @@ export function updatePost(id, newData) {
   newData.id = id;
 
   const data = getData();
+
   data.posts = data.posts.map((p) => {
+    if (p.id === id) {
+      p = newData;
+    }
+    return p;
+  });
+
+  writeData(data);
+}
+
+export function updateUser(id, newData) {
+  newData.id = id;
+
+  const data = getData();
+  data.users = data.users.map((p) => {
     if (p.id === id) {
       p = newData;
     }

@@ -1,4 +1,4 @@
-import { getData, writeData } from "../data.js";
+import { getData, writeData, updatePost } from "../data.js";
 
 export function postsGet(req, res) {
   const data = getData();
@@ -21,7 +21,7 @@ export function postsPost(req, res) {
 export function postsPut(req, res) {
   const id = parseInt(req.params.id);
 
-  updatePost(id, req.body);
+  const updatedData = updatePost(id, req.body);
 
   res.json(updatedData);
 }
