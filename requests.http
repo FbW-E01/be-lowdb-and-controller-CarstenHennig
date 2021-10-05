@@ -2,11 +2,11 @@ GET http://localhost:3012/posts
 
 ###
 
-DELETE http://localhost:3012/posts/5610612881721
+DELETE http://localhost:3012/posts/7168588332574
 
 ### 
 
-PUT http://localhost:3012/posts/6938841965853
+PUT http://localhost:3012/posts/6965499825282
 Content-Type: application/json
 
 {
@@ -31,6 +31,27 @@ GET http://localhost:3012/users/
 ###
 
 POST http://localhost:3012/users/
+Content-Type: application/json
+
+{
+    "name": "Carsten",
+    "lastname": "Milad"
+}
+
+### 
+
+DELETE http://localhost:3012/users/9189290997193
+
+###
+
+PUT http://localhost:3012/users/9189290997193
+Content-Type: application/json
+
+{
+    "content": "First one - but updated!!!",
+    "title": "First",
+    "updated": true
+}
 
 ### 
 
